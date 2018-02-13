@@ -4,4 +4,10 @@ The address of timer counter0 access port is 0x40
 timerinit()-This function initialises the timer registers.
 delay()-Sets 1ms time value
 delayfunc()-prints "kernel is sleeping" for 1ms. 
+command:
+  1.sudo insmod time.ko
+  2.sudo chmod 777 /dev/timer0
+  3.gcc user.c -o user
+  4. ./user
+ The timer output is displayed in userspace.
 
