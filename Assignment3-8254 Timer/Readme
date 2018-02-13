@@ -1,0 +1,7 @@
+This program shows the usage of 8254.The timer value is read and the timer is sent to sleep(printing "kernel is sleeping") for 1ms.Ioctl is used to write back data to userspace.
+The address of timer control word register is 0x43
+The address of timer counter0 access port is 0x40
+timerinit()-This function initialises the timer registers.
+delay()-Sets 1ms time value
+delayfunc()-prints "kernel is sleeping" for 1ms. 
+
