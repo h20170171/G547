@@ -99,13 +99,13 @@ static int usbOpenDevice(usb_dev_handle **device, int vendor, char *vendorName, 
                 usb_close(handle);
                 handle = NULL;
             }
-  }
+  	}
         if(handle)
             break;
-    }
-    if(handle != NULL){
-        errorCode = 0;
-   *device = handle;
+    	}
+       if(handle != NULL){
+        	errorCode = 0;
+      *device = handle;
     }
     return errorCode;
 }
